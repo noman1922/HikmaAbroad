@@ -1,0 +1,32 @@
+# .NET Core
+bin/
+obj/
+out/
+[Bb]uild/
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Packages
+node_modules/
+jspm_packages/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# End of .gitignore
