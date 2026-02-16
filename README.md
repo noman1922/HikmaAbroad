@@ -194,7 +194,7 @@ Allowed origins configured in `appsettings.json` under `Cors:AllowedOrigins`.
 ### Email Notifications
 Set `Email:Enabled` to `true` and configure SMTP settings to receive email notifications when students submit applications.
 
----
+--
 
 ## Swagger / OpenAPI
 
