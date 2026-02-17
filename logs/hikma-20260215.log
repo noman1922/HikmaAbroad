@@ -1,0 +1,17 @@
+2026-02-15 04:07:22.616 +06:00 [INF] Seed admin user created: admin@hikmaconsult.com
+2026-02-15 04:07:22.663 +06:00 [INF] Seeded SiteSettings
+2026-02-15 04:07:22.712 +06:00 [INF] Seeded 4 destinations
+2026-02-15 04:07:22.720 +06:00 [INF] Seeded 4 services
+2026-02-15 04:07:22.733 +06:00 [INF] Seeded 2 counsellors
+2026-02-15 04:07:22.747 +06:00 [INF] Seeded 2 student experiences
+2026-02-15 04:07:22.753 +06:00 [INF] Seeded pages
+2026-02-15 04:07:22.753 +06:00 [INF] Seed data completed
+2026-02-15 04:07:53.748 +06:00 [INF] HTTP GET /swagger responded 301 in 267.0124 ms
+2026-02-15 04:07:53.812 +06:00 [INF] HTTP GET /swagger/index.html responded 200 in 49.8978 ms
+2026-02-15 04:07:53.862 +06:00 [INF] HTTP GET /swagger/index.js responded 200 in 20.3351 ms
+2026-02-15 04:07:53.866 +06:00 [INF] HTTP GET /swagger/index.css responded 200 in 26.6973 ms
+2026-02-15 04:07:53.891 +06:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 50.1875 ms
+2026-02-15 04:07:53.892 +06:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 53.2977 ms
+2026-02-15 04:07:53.912 +06:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 70.7092 ms
+2026-02-15 04:07:54.115 +06:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.6690 ms
+2026-02-15 04:07:54.227 +06:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 131.2911 ms

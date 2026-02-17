@@ -1,0 +1,26 @@
+2026-02-18 00:07:11.212 +06:00 [INF] Seed data completed
+2026-02-18 00:08:20.620 +06:00 [INF] HTTP GET /swagger responded 301 in 481.2824 ms
+2026-02-18 00:08:20.674 +06:00 [INF] HTTP GET /swagger/index.html responded 200 in 38.5713 ms
+2026-02-18 00:08:20.714 +06:00 [INF] HTTP GET /swagger/index.js responded 200 in 12.6727 ms
+2026-02-18 00:08:20.717 +06:00 [INF] HTTP GET /swagger/index.css responded 200 in 18.9506 ms
+2026-02-18 00:08:20.732 +06:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 34.8918 ms
+2026-02-18 00:08:20.735 +06:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 33.6008 ms
+2026-02-18 00:08:20.749 +06:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 49.4306 ms
+2026-02-18 00:08:20.924 +06:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.5025 ms
+2026-02-18 00:08:21.041 +06:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 130.6619 ms
+2026-02-18 00:45:48.140 +06:00 [INF] Seed admin user created: admin@hikmaconsult.com
+2026-02-18 00:45:48.287 +06:00 [INF] Seeded SiteSettings
+2026-02-18 00:45:48.392 +06:00 [INF] Seeded 4 destinations
+2026-02-18 00:45:48.495 +06:00 [INF] Seeded 4 services
+2026-02-18 00:45:48.614 +06:00 [INF] Seeded 2 counsellors
+2026-02-18 00:45:48.738 +06:00 [INF] Seeded 2 student experiences
+2026-02-18 00:45:48.832 +06:00 [INF] Seeded pages
+2026-02-18 00:45:48.833 +06:00 [INF] Seed data completed
+2026-02-18 00:45:56.634 +06:00 [INF] HTTP GET /swagger/index.html responded 200 in 69.9286 ms
+2026-02-18 00:45:56.660 +06:00 [INF] HTTP GET /swagger/index.js responded 200 in 4.4271 ms
+2026-02-18 00:45:56.987 +06:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 123.8122 ms
+2026-02-18 00:49:23.856 +06:00 [INF] Seed data completed
+2026-02-18 00:50:54.580 +06:00 [INF] Student submitted: 6994b88e800f39a8e2adfd0f
+2026-02-18 00:50:54.684 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 669.5124 ms
+2026-02-18 00:50:54.689 +06:00 [INF] Email disabled. Skipping notification for student Noman
+2026-02-18 00:52:26.693 +06:00 [INF] HTTP GET /api/v1/students responded 401 in 8.2384 ms
