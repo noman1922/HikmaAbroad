@@ -13,7 +13,6 @@ namespace HikmaAbroad.Controllers;
 [ApiController]
 [Route("api/v1/settings")]
 [Produces("application/json")]
-[Authorize(Roles = "admin")]
 public class SettingsController : ControllerBase
 {
     private readonly MongoDbContext _db;
@@ -43,6 +42,7 @@ public class SettingsController : ControllerBase
     /// Update site settings (hero, footer, navbar, etc.).
     /// </summary>
     [HttpPut]
+    [Authorize(Roles = "admin")]
     [ProducesResponseType(typeof(ApiResponse<SiteSettings>), 200)]
     public async Task<IActionResult> Update([FromBody] SiteSettings settings)
     {

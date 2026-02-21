@@ -39,7 +39,7 @@ public class ServicesController : ControllerBase
     /// List all services including inactive (admin).
     /// </summary>
     [HttpGet("all")]
-    [Authorize(Roles = "admin")]
+    [Authorize(Roles = "admin,agent")]
     [ProducesResponseType(typeof(ApiResponse<List<Service>>), 200)]
     public async Task<IActionResult> GetAllAdmin()
     {
@@ -51,7 +51,7 @@ public class ServicesController : ControllerBase
     /// Get a service by ID (admin).
     /// </summary>
     [HttpGet("{id}")]
-    [Authorize(Roles = "admin")]
+    [Authorize(Roles = "admin,agent")]
     [ProducesResponseType(typeof(ApiResponse<Service>), 200)]
     [ProducesResponseType(404)]
     public async Task<IActionResult> GetById(string id)
@@ -65,7 +65,7 @@ public class ServicesController : ControllerBase
     /// Create a new service (admin). YouTube URL is validated if provided.
     /// </summary>
     [HttpPost]
-    [Authorize(Roles = "admin")]
+    [Authorize(Roles = "admin,agent")]
     [ProducesResponseType(typeof(ApiResponse<Service>), 201)]
     [ProducesResponseType(400)]
     public async Task<IActionResult> Create([FromBody] Service svc)
@@ -88,7 +88,7 @@ public class ServicesController : ControllerBase
     /// Update a service (admin). YouTube URL is validated if provided.
     /// </summary>
     [HttpPut("{id}")]
-    [Authorize(Roles = "admin")]
+    [Authorize(Roles = "admin,agent")]
     [ProducesResponseType(typeof(ApiResponse<Service>), 200)]
     [ProducesResponseType(400)]
     [ProducesResponseType(404)]
@@ -115,7 +115,7 @@ public class ServicesController : ControllerBase
     /// Delete a service (admin).
     /// </summary>
     [HttpDelete("{id}")]
-    [Authorize(Roles = "admin")]
+    [Authorize(Roles = "admin,agent")]
     [ProducesResponseType(typeof(ApiResponse<object>), 200)]
     [ProducesResponseType(404)]
     public async Task<IActionResult> Delete(string id)

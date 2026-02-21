@@ -9,17 +9,15 @@ public class StudentRequest
 {
     /// <summary>Student full name (required for submission)</summary>
     /// <example>Araf</example>
-    [MinLength(2, ErrorMessage = "Name must be at least 2 characters")]
-    public string Name { get; set; } = string.Empty;
+    public string? Name { get; set; }
 
     /// <summary>Email address</summary>
     /// <example>a@gmail.com</example>
-    [EmailAddress(ErrorMessage = "Invalid email format")]
-    public string Email { get; set; } = string.Empty;
+    public string? Email { get; set; }
 
     /// <summary>Phone number</summary>
     /// <example>+8801XXXXXXXX</example>
-    public string Phone { get; set; } = string.Empty;
+    public string? Phone { get; set; }
 
     /// <summary>Country the student is from</summary>
     /// <example>Bangladesh</example>
@@ -40,6 +38,21 @@ public class StudentRequest
     /// <summary>Source of the submission</summary>
     /// <example>web</example>
     public string Source { get; set; } = "web";
+
+    /// <summary>Subject for contact forms</summary>
+    public string? Subject { get; set; }
+
+    /// <summary>Message for contact forms</summary>
+    public string? Message { get; set; }
+
+    /// <summary>Specific purpose of application</summary>
+    public string? Purpose { get; set; }
+
+    /// <summary>Id of target university</summary>
+    public string? UniversityId { get; set; }
+
+    /// <summary>Id of target course</summary>
+    public string? CourseId { get; set; }
 }
 
 /// <summary>
@@ -55,4 +68,12 @@ public class HomePageResponse
     public object? Services { get; set; }
     public object? Counsellors { get; set; }
     public object? AboutSummary { get; set; }
+}
+/// <summary>
+/// Status update request (isRead, isDone).
+/// </summary>
+public class StatusUpdateRequest
+{
+    public bool? IsRead { get; set; }
+    public bool? IsDone { get; set; }
 }

@@ -1,0 +1,178 @@
+2026-02-19 01:28:04.991 +06:00 [INF] Seed data completed
+2026-02-19 01:28:05.133 +06:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5076: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-02-19 01:29:51.613 +06:00 [INF] Seed data completed
+2026-02-19 01:29:59.089 +06:00 [INF] HTTP GET /api/v1/home responded 200 in 132.8957 ms
+2026-02-19 01:39:47.277 +06:00 [INF] Seed admin user created: admin@hikmaconsult.com
+2026-02-19 01:39:47.438 +06:00 [INF] Seeded SiteSettings
+2026-02-19 01:39:47.566 +06:00 [INF] Seeded 4 destinations
+2026-02-19 01:39:47.688 +06:00 [INF] Seeded 4 services
+2026-02-19 01:39:47.823 +06:00 [INF] Seeded 2 counsellors
+2026-02-19 01:39:47.973 +06:00 [INF] Seeded 2 student experiences
+2026-02-19 01:39:48.090 +06:00 [INF] Seeded pages
+2026-02-19 01:39:48.091 +06:00 [INF] Seed data completed
+2026-02-19 01:39:54.258 +06:00 [INF] HTTP HEAD /api/v1/home responded 405 in 41.4047 ms
+2026-02-19 01:39:54.681 +06:00 [INF] HTTP GET /api/v1/home responded 200 in 408.2612 ms
+2026-02-19 01:41:33.511 +06:00 [INF] Seed data completed
+2026-02-19 01:41:46.933 +06:00 [INF] HTTP GET /api/v1/home responded 200 in 493.9533 ms
+2026-02-19 01:41:51.245 +06:00 [INF] HTTP GET /api/v1/destinations responded 200 in 95.0683 ms
+2026-02-19 01:41:53.284 +06:00 [INF] HTTP GET /api/v1/services responded 200 in 56.9358 ms
+2026-02-19 01:41:57.001 +06:00 [INF] HTTP GET /api/v1/pages/about responded 200 in 69.5541 ms
+2026-02-19 01:43:14.635 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.8084 ms
+2026-02-19 01:43:14.765 +06:00 [INF] Student submitted: 69961652ea14e4f161abbc66
+2026-02-19 01:43:15.045 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 407.0932 ms
+2026-02-19 01:43:15.067 +06:00 [INF] Email disabled. Skipping notification for student Noman
+2026-02-19 01:43:58.716 +06:00 [INF] HTTP GET /api/v1/students/draft/296a1218-4436-46f4-93a8-6de5b6c9ffbe responded 404 in 424.3078 ms
+2026-02-19 01:44:03.205 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.2205 ms
+2026-02-19 01:44:03.319 +06:00 [INF] Student draft saved: 69961683ea14e4f161abbc67
+2026-02-19 01:44:03.320 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 113.2808 ms
+2026-02-19 01:44:05.466 +06:00 [INF] Student draft saved: 69961683ea14e4f161abbc67
+2026-02-19 01:44:05.467 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 268.9129 ms
+2026-02-19 01:44:07.586 +06:00 [INF] Student draft saved: 69961683ea14e4f161abbc67
+2026-02-19 01:44:07.587 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 197.5563 ms
+2026-02-19 01:44:14.748 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.1802 ms
+2026-02-19 01:44:14.921 +06:00 [INF] Student draft saved: 69961683ea14e4f161abbc67
+2026-02-19 01:44:14.923 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 172.5390 ms
+2026-02-19 01:44:24.103 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.1651 ms
+2026-02-19 01:44:24.287 +06:00 [INF] Student draft saved: 69961683ea14e4f161abbc67
+2026-02-19 01:44:24.289 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 183.1538 ms
+2026-02-19 01:44:26.929 +06:00 [INF] Student submitted: 69961683ea14e4f161abbc67
+2026-02-19 01:44:26.930 +06:00 [INF] Email disabled. Skipping notification for student Hikmah Abroad
+2026-02-19 01:44:26.931 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 153.6833 ms
+2026-02-19 01:48:29.355 +06:00 [INF] HTTP GET /api/v1/students/draft/74fd9211-6fa4-4028-951d-009bea9b7420 responded 404 in 51.2354 ms
+2026-02-19 01:48:31.339 +06:00 [INF] HTTP GET /api/v1/students/draft/74fd9211-6fa4-4028-951d-009bea9b7420 responded 404 in 52.2339 ms
+2026-02-19 01:50:08.404 +06:00 [INF] Seed data completed
+2026-02-19 01:50:15.376 +06:00 [INF] HTTP HEAD /api/v1/home responded 405 in 42.2446 ms
+2026-02-19 01:50:15.778 +06:00 [INF] HTTP GET /api/v1/home responded 200 in 387.9310 ms
+2026-02-19 02:01:20.885 +06:00 [INF] Seed data completed
+2026-02-19 02:01:49.938 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 285.8278 ms
+2026-02-19 02:03:48.404 +06:00 [INF] Seed data completed
+2026-02-19 02:04:05.007 +06:00 [INF] Student draft saved: 69961b3455369a7e0295762d. DraftToken: student-token-1
+2026-02-19 02:04:05.024 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 255.0898 ms
+2026-02-19 02:04:12.150 +06:00 [INF] Contact draft saved: 69961b3c55369a7e0295762e. DraftToken: contact-token-1
+2026-02-19 02:04:12.156 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 144.2417 ms
+2026-02-19 02:12:11.220 +06:00 [INF] Seed data completed
+2026-02-19 02:12:14.691 +06:00 [INF] HTTP GET /api/v1/home responded 200 in 433.9346 ms
+2026-02-19 02:12:17.097 +06:00 [INF] HTTP GET /api/v1/students/draft/74fd9211-6fa4-4028-951d-009bea9b7420 responded 404 in 146.9739 ms
+2026-02-19 02:12:17.214 +06:00 [INF] HTTP GET /api/v1/students/draft/74fd9211-6fa4-4028-951d-009bea9b7420 responded 404 in 113.6235 ms
+2026-02-19 02:12:19.868 +06:00 [INF] HTTP GET /api/v1/students/draft/74fd9211-6fa4-4028-951d-009bea9b7420 responded 404 in 111.1305 ms
+2026-02-19 02:12:19.985 +06:00 [INF] HTTP GET /api/v1/students/draft/74fd9211-6fa4-4028-951d-009bea9b7420 responded 404 in 114.9148 ms
+2026-02-19 02:12:23.678 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.6037 ms
+2026-02-19 02:12:23.710 +06:00 [INF] HTTP POST /api/v1/students responded 400 in 29.0453 ms
+2026-02-19 02:12:32.185 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.2421 ms
+2026-02-19 02:12:32.334 +06:00 [INF] Contact draft saved: 69961d30e6546769ecd0d390. DraftToken: 74fd9211-6fa4-4028-951d-009bea9b7420
+2026-02-19 02:12:32.338 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 151.2331 ms
+2026-02-19 02:12:35.073 +06:00 [INF] Contact draft saved: 69961d30e6546769ecd0d390. DraftToken: 74fd9211-6fa4-4028-951d-009bea9b7420
+2026-02-19 02:12:35.074 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 175.6426 ms
+2026-02-19 02:12:36.228 +06:00 [INF] Contact draft saved: 69961d30e6546769ecd0d390. DraftToken: 74fd9211-6fa4-4028-951d-009bea9b7420
+2026-02-19 02:12:36.230 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 167.3258 ms
+2026-02-19 02:12:40.048 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.1516 ms
+2026-02-19 02:12:40.218 +06:00 [INF] Contact draft saved: 69961d30e6546769ecd0d390. DraftToken: 74fd9211-6fa4-4028-951d-009bea9b7420
+2026-02-19 02:12:40.220 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 170.0205 ms
+2026-02-19 02:12:57.964 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.2663 ms
+2026-02-19 02:12:58.136 +06:00 [INF] Contact message submitted: 69961d30e6546769ecd0d390
+2026-02-19 02:12:58.137 +06:00 [INF] Contact submitted: 69961d30e6546769ecd0d390. DraftToken: 74fd9211-6fa4-4028-951d-009bea9b7420
+2026-02-19 02:12:58.138 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 170.9798 ms
+2026-02-19 02:13:18.026 +06:00 [INF] HTTP GET /api/v1/students/draft/983333f1-df33-4979-aae4-671d3628bb44 responded 404 in 106.0575 ms
+2026-02-19 02:13:28.124 +06:00 [INF] HTTP GET /api/v1/home responded 200 in 321.2903 ms
+2026-02-19 02:15:06.597 +06:00 [INF] HTTP GET /api/v1/destinations responded 200 in 56.6061 ms
+2026-02-19 02:15:09.895 +06:00 [INF] HTTP GET /api/v1/services responded 200 in 57.6840 ms
+2026-02-19 02:16:01.831 +06:00 [INF] HTTP GET /api/v1/home responded 200 in 321.0432 ms
+2026-02-19 02:17:00.246 +06:00 [INF] HTTP GET /api/v1/destinations responded 200 in 53.0779 ms
+2026-02-19 02:17:00.798 +06:00 [INF] HTTP GET /api/v1/services responded 200 in 54.4847 ms
+2026-02-19 02:17:01.427 +06:00 [INF] HTTP GET /api/v1/pages/about responded 200 in 58.3681 ms
+2026-02-19 02:17:02.191 +06:00 [INF] HTTP GET /api/v1/students/draft/4953f749-a8b1-4d1e-be84-5f9029e88143 responded 404 in 110.3695 ms
+2026-02-19 02:17:03.295 +06:00 [INF] HTTP GET /api/v1/home responded 200 in 317.5836 ms
+2026-02-19 02:17:51.117 +06:00 [INF] HTTP GET /api/v1/students/draft/4953f749-a8b1-4d1e-be84-5f9029e88143 responded 404 in 105.3650 ms
+2026-02-19 02:17:51.229 +06:00 [INF] HTTP GET /api/v1/students/draft/4953f749-a8b1-4d1e-be84-5f9029e88143 responded 404 in 108.4960 ms
+2026-02-19 02:17:57.695 +06:00 [INF] HTTP GET /api/v1/students/draft/4953f749-a8b1-4d1e-be84-5f9029e88143 responded 404 in 108.2066 ms
+2026-02-19 02:17:57.805 +06:00 [INF] HTTP GET /api/v1/students/draft/4953f749-a8b1-4d1e-be84-5f9029e88143 responded 404 in 108.9408 ms
+2026-02-19 15:19:24.530 +06:00 [INF] Seed data completed
+2026-02-19 15:19:30.846 +06:00 [INF] HTTP GET /api/v1/home responded 200 in 706.6399 ms
+2026-02-19 15:19:36.909 +06:00 [INF] HTTP GET /api/v1/destinations responded 200 in 72.9808 ms
+2026-02-19 15:19:40.905 +06:00 [INF] HTTP GET /api/v1/services responded 200 in 55.0986 ms
+2026-02-19 15:19:46.251 +06:00 [INF] HTTP GET /api/v1/pages/about responded 200 in 72.1433 ms
+2026-02-19 15:19:47.672 +06:00 [INF] HTTP GET /api/v1/students/draft/23f4c0a6-49ad-417d-b47a-f5745b22a4f2 responded 404 in 124.4499 ms
+2026-02-19 15:19:59.181 +06:00 [INF] HTTP GET /api/v1/students/draft/23f4c0a6-49ad-417d-b47a-f5745b22a4f2 responded 404 in 99.4738 ms
+2026-02-19 15:19:59.281 +06:00 [INF] HTTP GET /api/v1/students/draft/23f4c0a6-49ad-417d-b47a-f5745b22a4f2 responded 404 in 98.7639 ms
+2026-02-19 16:58:00.280 +06:00 [INF] Seed data completed
+2026-02-19 17:15:35.853 +06:00 [INF] Seed data completed
+2026-02-19 17:20:30.828 +06:00 [INF] Seed data completed
+2026-02-19 17:20:37.587 +06:00 [INF] HTTP GET /swagger/index.html responded 200 in 260.0088 ms
+2026-02-19 17:20:37.641 +06:00 [INF] HTTP GET /swagger/index.js responded 200 in 10.3755 ms
+2026-02-19 17:20:38.125 +06:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 293.7020 ms
+2026-02-19 17:21:37.004 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 1.2683 ms
+2026-02-19 17:21:37.526 +06:00 [INF] Contact draft saved: 6996f24130382f3e4bd7764e. DraftToken: 40eb5906a504421abca7034e500c39d7
+2026-02-19 17:21:37.547 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 537.3205 ms
+2026-02-19 17:21:44.617 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.2053 ms
+2026-02-19 17:21:44.859 +06:00 [INF] Contact draft saved: 6996f24130382f3e4bd7764e. DraftToken: 40eb5906a504421abca7034e500c39d7
+2026-02-19 17:21:44.861 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 241.7116 ms
+2026-02-19 17:22:04.522 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.6786 ms
+2026-02-19 17:22:04.690 +06:00 [INF] Contact message submitted: 6996f24130382f3e4bd7764e
+2026-02-19 17:22:04.691 +06:00 [INF] Contact submitted: 6996f24130382f3e4bd7764e. DraftToken: 40eb5906a504421abca7034e500c39d7
+2026-02-19 17:22:04.692 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 166.8967 ms
+2026-02-19 21:16:58.319 +06:00 [INF] Seed data completed
+2026-02-19 21:17:07.453 +06:00 [INF] HTTP GET /swagger/index.html responded 200 in 279.9784 ms
+2026-02-19 21:17:07.489 +06:00 [INF] HTTP GET /swagger/index.js responded 200 in 12.8314 ms
+2026-02-19 21:17:07.768 +06:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 120.7268 ms
+2026-02-19 22:25:45.611 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 7.4520 ms
+2026-02-19 22:25:45.633 +06:00 [INF] HTTP GET /api/v1/settings responded 401 in 11.9958 ms
+2026-02-19 22:28:16.826 +06:00 [INF] Seed data completed
+2026-02-19 22:28:18.554 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 17.4375 ms
+2026-02-19 22:28:18.554 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 17.4300 ms
+2026-02-19 22:28:18.594 +06:00 [INF] HTTP GET /api/v1/settings responded 401 in 23.4226 ms
+2026-02-19 22:28:18.601 +06:00 [INF] HTTP GET /api/v1/settings responded 401 in 3.8327 ms
+2026-02-19 22:35:14.968 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.2843 ms
+2026-02-19 22:35:14.968 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0537 ms
+2026-02-19 22:35:14.972 +06:00 [INF] HTTP GET /api/v1/settings responded 401 in 1.5411 ms
+2026-02-19 22:35:14.974 +06:00 [INF] HTTP GET /api/v1/settings responded 401 in 0.1948 ms
+2026-02-19 22:35:31.355 +06:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.2277 ms
+2026-02-19 22:35:31.468 +06:00 [WRN] Failed login attempt for admin@hikmahabroad.com
+2026-02-19 22:35:31.483 +06:00 [INF] HTTP POST /api/v1/auth/login responded 401 in 125.2737 ms
+2026-02-19 22:35:49.283 +06:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.2183 ms
+2026-02-19 22:35:49.340 +06:00 [WRN] Failed login attempt for admin@hikmahabroad.com
+2026-02-19 22:35:49.344 +06:00 [INF] HTTP POST /api/v1/auth/login responded 401 in 58.0724 ms
+2026-02-19 23:51:07.950 +06:00 [INF] Seed data completed
+2026-02-19 23:51:11.538 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 13.5636 ms
+2026-02-19 23:51:11.538 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 13.5629 ms
+2026-02-19 23:51:11.571 +06:00 [INF] HTTP GET /api/v1/settings responded 401 in 18.6045 ms
+2026-02-19 23:51:11.577 +06:00 [INF] HTTP GET /api/v1/settings responded 401 in 2.5529 ms
+2026-02-19 23:51:20.357 +06:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.2306 ms
+2026-02-19 23:51:20.462 +06:00 [WRN] Failed login attempt for admin@hikmahabroad.com
+2026-02-19 23:51:20.476 +06:00 [INF] HTTP POST /api/v1/auth/login responded 401 in 115.7093 ms
+2026-02-19 23:51:27.573 +06:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.2535 ms
+2026-02-19 23:51:27.631 +06:00 [WRN] Failed login attempt for admin@hikmahabroad.com
+2026-02-19 23:51:27.632 +06:00 [INF] HTTP POST /api/v1/auth/login responded 401 in 55.5630 ms
+2026-02-19 23:52:03.135 +06:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.1923 ms
+2026-02-19 23:52:03.191 +06:00 [WRN] Failed login attempt for admin@hikmahabroad.com
+2026-02-19 23:52:03.192 +06:00 [INF] HTTP POST /api/v1/auth/login responded 401 in 54.2288 ms
+2026-02-19 23:56:21.845 +06:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.4148 ms
+2026-02-19 23:56:21.911 +06:00 [WRN] Failed login attempt for hikmahabroad@gmail.com
+2026-02-19 23:56:21.913 +06:00 [INF] HTTP POST /api/v1/auth/login responded 401 in 65.0472 ms
+2026-02-19 23:56:40.184 +06:00 [INF] Seed data completed
+2026-02-19 23:56:45.994 +06:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 13.9792 ms
+2026-02-19 23:56:46.119 +06:00 [WRN] Failed login attempt for hikmahabroad@gmail.com
+2026-02-19 23:56:46.141 +06:00 [INF] HTTP POST /api/v1/auth/login responded 401 in 131.7011 ms

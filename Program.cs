@@ -6,6 +6,9 @@ using HikmaAbroad.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using MongoDB.Bson.Serialization.Conventions;
+using MongoDB.Driver;
+using HikmaAbroad.Models.Entities;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -143,11 +146,39 @@ var app = builder.Build();
 // ── Ensure indexes and seed data ─────────────────────────────────────
 using (var scope = app.Services.CreateScope())
 {
-    var db = scope.ServiceProvider.GetRequiredService<MongoDbContext>();
-    await db.EnsureIndexesAsync();
-
     var seeder = scope.ServiceProvider.GetRequiredService<SeedDataService>();
     await seeder.SeedAsync();
+
+    // ── Data Migration / Integrity Fix ───────────────────────────────────
+    try
+    {
+        var db = scope.ServiceProvider.GetRequiredService<MongoDbContext>();
+        
+        // Fix Universities (Ensure consistency)
+        var unisToFix = await db.Universities.Find(u => true).ToListAsync();
+        // (Logic here if needed, but BsonElement handles most)
+
+        // Fix Courses (UniversityName)
+        var coursesToFix = await db.Courses.Find(c => string.IsNullOrEmpty(c.UniversityName)).ToListAsync();
+        foreach (var course in coursesToFix)
+        {
+            if (!string.IsNullOrEmpty(course.UniversityId))
+            {
+                var uni = await db.Universities.Find(u => u.Id == course.UniversityId).FirstOrDefaultAsync();
+                if (uni != null)
+                {
+                    await db.Courses.UpdateOneAsync(
+                        c => c.Id == course.Id,
+                        Builders<Course>.Update.Set("universityName", uni.Name)
+                    );
+                }
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Migration warning: {ex.Message}");
+    }
 }
 
 // ── Middleware pipeline ──────────────────────────────────────────────
@@ -179,5 +210,15 @@ app.UseSwaggerUI(c =>
 });
 
 app.MapControllers();
+
+// Print information to console
+if (app.Environment.IsDevelopment())
+{
+    var appUrl = app.Urls.FirstOrDefault() ?? "http://localhost:5076";
+    Console.WriteLine("-------------------------------------------------------");
+    Console.WriteLine($"Hikma Abroad API is running in DEVELOPMENT mode");
+    Console.WriteLine($"Swagger UI: {appUrl}/swagger");
+    Console.WriteLine("-------------------------------------------------------");
+}
 
 app.Run();

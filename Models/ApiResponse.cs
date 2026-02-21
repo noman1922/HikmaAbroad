@@ -15,7 +15,10 @@ public class ApiResponse<T>
     /// <summary>Error message if unsuccessful</summary>
     public string? Error { get; set; }
 
-    public static ApiResponse<T> Ok(T data) => new() { Success = true, Data = data };
+    /// <summary>Optional message for success</summary>
+    public string? Message { get; set; }
+
+    public static ApiResponse<T> Ok(T data, string? message = null) => new() { Success = true, Data = data, Message = message };
     public static ApiResponse<T> Fail(string error) => new() { Success = false, Error = error };
 }
 

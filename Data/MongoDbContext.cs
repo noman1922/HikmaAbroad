@@ -25,8 +25,12 @@ public class MongoDbContext
     public IMongoCollection<Counsellor> Counsellors => _database.GetCollection<Counsellor>("Counsellors");
     public IMongoCollection<Page> Pages => _database.GetCollection<Page>("Pages");
     public IMongoCollection<Student> Students => _database.GetCollection<Student>("Students");
+    public IMongoCollection<Contact> Contacts => _database.GetCollection<Contact>("Contacts");
     public IMongoCollection<AdminUser> AdminUsers => _database.GetCollection<AdminUser>("AdminUsers");
     public IMongoCollection<Media> Media => _database.GetCollection<Media>("Media");
+    public IMongoCollection<University> Universities => _database.GetCollection<University>("Universities");
+    public IMongoCollection<Course> Courses => _database.GetCollection<Course>("Courses");
+    public IMongoCollection<Blog> Blogs => _database.GetCollection<Blog>("Blogs");
 
     /// <summary>
     /// Create indexes for performance.
@@ -40,6 +44,15 @@ public class MongoDbContext
             new CreateIndexModel<Student>(studentIndexes.Ascending(s => s.IsSubmitted)),
             new CreateIndexModel<Student>(studentIndexes.Ascending(s => s.DraftToken)),
             new CreateIndexModel<Student>(studentIndexes.Descending(s => s.CreatedAt)),
+        });
+
+        // Contacts indexes
+        var contactIndexes = Builders<Contact>.IndexKeys;
+        await Contacts.Indexes.CreateManyAsync(new[]
+        {
+            new CreateIndexModel<Contact>(contactIndexes.Ascending(c => c.IsSubmitted)),
+            new CreateIndexModel<Contact>(contactIndexes.Ascending(c => c.DraftToken)),
+            new CreateIndexModel<Contact>(contactIndexes.Descending(c => c.CreatedAt)),
         });
 
         // Destinations indexes
@@ -61,5 +74,30 @@ public class MongoDbContext
         // AdminUsers index
         await AdminUsers.Indexes.CreateOneAsync(
             new CreateIndexModel<AdminUser>(Builders<AdminUser>.IndexKeys.Ascending(a => a.Email), new CreateIndexOptions { Unique = true }));
+
+        // Universities indexes
+        var uniIndexes = Builders<University>.IndexKeys;
+        await Universities.Indexes.CreateManyAsync(new[]
+        {
+            new CreateIndexModel<University>(uniIndexes.Ascending(u => u.Slug), new CreateIndexOptions { Unique = true }),
+            new CreateIndexModel<University>(uniIndexes.Ascending(u => u.IsActive)),
+        });
+
+        // Courses indexes
+        var courseIndexes = Builders<Course>.IndexKeys;
+        await Courses.Indexes.CreateManyAsync(new[]
+        {
+            new CreateIndexModel<Course>(courseIndexes.Ascending(c => c.Slug), new CreateIndexOptions { Unique = true }),
+            new CreateIndexModel<Course>(courseIndexes.Ascending(c => c.IsActive)),
+        });
+
+        // Blogs indexes
+        var blogIndexes = Builders<Blog>.IndexKeys;
+        await Blogs.Indexes.CreateManyAsync(new[]
+        {
+            new CreateIndexModel<Blog>(blogIndexes.Ascending(b => b.Slug), new CreateIndexOptions { Unique = true }),
+            new CreateIndexModel<Blog>(blogIndexes.Ascending(b => b.IsPublished)),
+            new CreateIndexModel<Blog>(blogIndexes.Descending(b => b.CreatedAt)),
+        });
     }
 }

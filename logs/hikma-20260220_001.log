@@ -1,0 +1,61 @@
+2026-02-20 01:32:51.727 +06:00 [INF] Seed admin user credentials updated for: hikmahabroad@gmail.com
+2026-02-20 01:32:52.096 +06:00 [INF] Seed data completed
+2026-02-20 01:32:52.338 +06:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5076: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-02-20 02:53:27.978 +06:00 [INF] Seed admin user credentials updated for: hikmahabroad@gmail.com
+2026-02-20 02:53:28.362 +06:00 [INF] Seed data completed
+2026-02-20 02:54:30.572 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 15.3076 ms
+2026-02-20 02:54:30.572 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 15.3078 ms
+2026-02-20 02:54:30.716 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 128.6855 ms
+2026-02-20 02:54:30.772 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 56.7526 ms
+2026-02-20 02:54:31.814 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0739 ms
+2026-02-20 02:54:31.816 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1417 ms
+2026-02-20 02:54:31.868 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 54.8010 ms
+2026-02-20 02:54:31.926 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 55.5510 ms
+2026-02-20 02:54:32.267 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 450.1720 ms
+2026-02-20 02:55:18.166 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.4506 ms
+2026-02-20 02:55:18.168 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1261 ms
+2026-02-20 02:55:18.224 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 54.2642 ms
+2026-02-20 02:55:18.280 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 54.1726 ms
+2026-02-20 02:57:35.869 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.2413 ms
+2026-02-20 02:57:35.941 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 54.4704 ms
+2026-02-20 03:06:43.078 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.7045 ms
+2026-02-20 03:06:43.081 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.3591 ms
+2026-02-20 03:06:43.081 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1577 ms
+2026-02-20 03:06:43.081 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0864 ms
+2026-02-20 03:06:43.145 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 54.4474 ms
+2026-02-20 03:06:43.204 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 56.6828 ms
+2026-02-20 03:06:43.259 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.8888 ms
+2026-02-20 03:06:43.316 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 54.2282 ms
+2026-02-20 03:06:45.561 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.3838 ms
+2026-02-20 03:06:45.561 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0523 ms
+2026-02-20 03:06:45.614 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.2161 ms
+2026-02-20 03:06:45.667 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.7431 ms
+2026-02-20 03:06:45.972 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 406.9294 ms
+2026-02-20 03:06:47.373 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.9905 ms
+2026-02-20 03:06:47.424 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 50.3332 ms
+2026-02-20 03:06:56.415 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.1701 ms
+2026-02-20 03:06:56.456 +06:00 [INF] HTTP POST /api/v1/students responded 400 in 38.1249 ms

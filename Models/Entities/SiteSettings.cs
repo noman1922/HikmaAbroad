@@ -33,11 +33,11 @@ public class SiteSettings
 
 public class HeroSection
 {
-    public string Title { get; set; } = string.Empty;
-    public string Subtitle { get; set; } = string.Empty;
-    public string CtaText { get; set; } = string.Empty;
-    public string CtaUrl { get; set; } = string.Empty;
-    public List<string> Banners { get; set; } = new();
+    public string Title { get; set; } = "Expert Guidance For International Students In Malaysia";
+    public string Subtitle { get; set; } = "We simplify everything—from choosing the perfect university to obtaining your student visa. Your dream education in Malaysia starts here.";
+    public string CtaText { get; set; } = "Explore Universities";
+    public string CtaUrl { get; set; } = "/universities";
+    public List<string> Banners { get; set; } = new() { "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?q=80&w=1974&auto=format&fit=crop" };
 }
 
 public class NavItem
@@ -48,8 +48,8 @@ public class NavItem
 
 public class FooterSection
 {
-    public string Text { get; set; } = string.Empty;
-    public string Address { get; set; } = string.Empty;
-    public string Phone { get; set; } = string.Empty;
-    public string Email { get; set; } = string.Empty;
+    public string Text { get; set; } = "Your trusted partner for education in Malaysia.";
+    public string Address { get; set; } = "Kuala Lumpur, Malaysia";
+    public string Phone { get; set; } = "+60 123 456 789";
+    public string Email { get; set; } = "hello@hikmahabroad.com";
 }

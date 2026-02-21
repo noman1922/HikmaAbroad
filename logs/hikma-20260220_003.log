@@ -1,0 +1,942 @@
+2026-02-20 03:10:26.378 +06:00 [INF] Seed admin user credentials updated for: hikmahabroad@gmail.com
+2026-02-20 03:10:26.752 +06:00 [INF] Seed data completed
+2026-02-20 03:10:27.012 +06:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5076: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-02-20 03:11:48.514 +06:00 [INF] Seed admin user credentials updated for: hikmahabroad@gmail.com
+2026-02-20 03:11:48.888 +06:00 [INF] Seed data completed
+2026-02-20 03:11:55.214 +06:00 [INF] HTTP GET /swagger/index.html responded 200 in 78.5425 ms
+2026-02-20 03:11:55.243 +06:00 [INF] HTTP GET /swagger/index.js responded 200 in 3.6745 ms
+2026-02-20 03:11:55.461 +06:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 125.3815 ms
+2026-02-20 03:12:05.419 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 1.8220 ms
+2026-02-20 03:12:05.419 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 2.0660 ms
+2026-02-20 03:12:05.419 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 1.1277 ms
+2026-02-20 03:12:05.419 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 1.8219 ms
+2026-02-20 03:12:05.508 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 84.5645 ms
+2026-02-20 03:12:05.566 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 55.6867 ms
+2026-02-20 03:12:05.620 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.7804 ms
+2026-02-20 03:12:05.673 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.8455 ms
+2026-02-20 03:12:06.512 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1847 ms
+2026-02-20 03:12:06.514 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.3203 ms
+2026-02-20 03:12:06.563 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.5073 ms
+2026-02-20 03:12:06.618 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.4040 ms
+2026-02-20 03:12:06.884 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 365.8807 ms
+2026-02-20 03:12:18.453 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.2684 ms
+2026-02-20 03:12:18.454 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1921 ms
+2026-02-20 03:12:18.454 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0770 ms
+2026-02-20 03:12:18.455 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0508 ms
+2026-02-20 03:12:18.511 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 54.0150 ms
+2026-02-20 03:12:18.566 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.4392 ms
+2026-02-20 03:12:19.266 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.0989 ms
+2026-02-20 03:12:19.321 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.1020 ms
+2026-02-20 03:12:35.209 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.2947 ms
+2026-02-20 03:12:35.307 +06:00 [INF] Contact draft saved: 69977cc3f73c750ac7a2e1ef. DraftToken: 4b762c7eed2044d38489279b3618b075
+2026-02-20 03:12:35.312 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 99.6070 ms
+2026-02-20 03:12:57.446 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.4626 ms
+2026-02-20 03:12:57.976 +06:00 [INF] Contact message submitted: 69977cc3f73c750ac7a2e1ef
+2026-02-20 03:12:57.977 +06:00 [INF] Contact submitted: 69977cc3f73c750ac7a2e1ef. DraftToken: 4b762c7eed2044d38489279b3618b075
+2026-02-20 03:12:57.978 +06:00 [INF] HTTP POST /api/v1/students responded 200 in 527.9493 ms
+2026-02-20 03:13:32.197 +06:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.1963 ms
+2026-02-20 03:13:32.367 +06:00 [INF] Admin hikmahabroad@gmail.com logged in successfully
+2026-02-20 03:13:32.378 +06:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 178.4565 ms
+2026-02-20 03:13:32.407 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.4312 ms
+2026-02-20 03:13:32.408 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.2249 ms
+2026-02-20 03:13:32.411 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 1.5976 ms
+2026-02-20 03:13:32.414 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.2161 ms
+2026-02-20 03:13:32.414 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0604 ms
+2026-02-20 03:13:32.414 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0556 ms
+2026-02-20 03:13:32.416 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.1163 ms
+2026-02-20 03:13:32.418 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.1403 ms
+2026-02-20 03:13:32.517 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 98.7398 ms
+2026-02-20 03:13:32.523 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 101.5015 ms
+2026-02-20 03:13:32.573 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 54.6405 ms
+2026-02-20 03:13:32.574 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 49.7018 ms
+2026-02-20 03:13:33.100 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 675.9344 ms
+2026-02-20 03:13:33.102 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 679.2743 ms
+2026-02-20 03:13:33.206 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 103.7726 ms
+2026-02-20 03:13:33.208 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 104.7467 ms
+2026-02-20 03:13:39.825 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.3996 ms
+2026-02-20 03:13:39.825 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0652 ms
+2026-02-20 03:13:39.827 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0874 ms
+2026-02-20 03:13:39.931 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 101.3367 ms
+2026-02-20 03:13:39.932 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 104.1721 ms
+2026-02-20 03:13:40.037 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 103.6794 ms
+2026-02-20 03:13:43.055 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 108.0395 ms
+2026-02-20 03:13:44.043 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 107.4897 ms
+2026-02-20 03:13:44.877 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.3439 ms
+2026-02-20 03:13:44.988 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 106.8110 ms
+2026-02-20 03:13:45.806 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0875 ms
+2026-02-20 03:13:45.914 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 105.8827 ms
+2026-02-20 03:13:46.780 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts/69977cc3f73c750ac7a2e1ef/status responded 204 in 0.1097 ms
+2026-02-20 03:13:46.901 +06:00 [INF] HTTP PATCH /api/v1/students/contacts/69977cc3f73c750ac7a2e1ef/status responded 200 in 117.0815 ms
+2026-02-20 03:13:47.015 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 110.4545 ms
+2026-02-20 03:13:53.095 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts/69977cc3f73c750ac7a2e1ef/status responded 204 in 0.2364 ms
+2026-02-20 03:13:53.211 +06:00 [INF] HTTP PATCH /api/v1/students/contacts/69977cc3f73c750ac7a2e1ef/status responded 200 in 112.4178 ms
+2026-02-20 03:13:53.216 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.2566 ms
+2026-02-20 03:13:53.324 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 105.4700 ms
+2026-02-20 03:14:01.477 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts/69976cf7472973980cd4de76/status responded 204 in 0.1277 ms
+2026-02-20 03:14:01.585 +06:00 [INF] HTTP PATCH /api/v1/students/contacts/69976cf7472973980cd4de76/status responded 200 in 105.7539 ms
+2026-02-20 03:14:01.588 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0908 ms
+2026-02-20 03:14:01.694 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 103.8170 ms
+2026-02-20 03:14:02.308 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts/6996f24130382f3e4bd7764e/status responded 204 in 0.0812 ms
+2026-02-20 03:14:02.416 +06:00 [INF] HTTP PATCH /api/v1/students/contacts/6996f24130382f3e4bd7764e/status responded 200 in 106.0090 ms
+2026-02-20 03:14:02.523 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 103.2529 ms
+2026-02-20 03:14:03.582 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts/69961d30e6546769ecd0d390/status responded 204 in 0.1674 ms
+2026-02-20 03:14:03.691 +06:00 [INF] HTTP PATCH /api/v1/students/contacts/69961d30e6546769ecd0d390/status responded 200 in 105.5481 ms
+2026-02-20 03:14:03.799 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 104.3346 ms
+2026-02-20 03:14:04.288 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.1788 ms
+2026-02-20 03:14:04.396 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 104.7343 ms
+2026-02-20 03:14:56.101 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1487 ms
+2026-02-20 03:14:56.101 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0411 ms
+2026-02-20 03:14:56.167 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 62.7494 ms
+2026-02-20 03:14:56.222 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.8958 ms
+2026-02-20 03:15:03.066 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.1789 ms
+2026-02-20 03:15:03.067 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0693 ms
+2026-02-20 03:15:03.068 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.1012 ms
+2026-02-20 03:15:03.069 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0489 ms
+2026-02-20 03:15:03.069 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0238 ms
+2026-02-20 03:15:03.069 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0218 ms
+2026-02-20 03:15:03.071 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0434 ms
+2026-02-20 03:15:03.071 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0493 ms
+2026-02-20 03:15:03.127 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 52.6090 ms
+2026-02-20 03:15:03.128 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 54.4024 ms
+2026-02-20 03:15:03.177 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 99.0403 ms
+2026-02-20 03:15:03.178 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 48.3621 ms
+2026-02-20 03:15:03.179 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 100.8132 ms
+2026-02-20 03:15:03.179 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 50.6295 ms
+2026-02-20 03:15:03.278 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 100.0813 ms
+2026-02-20 03:15:03.280 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 100.2771 ms
+2026-02-20 03:15:05.913 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0889 ms
+2026-02-20 03:15:05.914 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0433 ms
+2026-02-20 03:15:06.019 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 102.7384 ms
+2026-02-20 03:15:06.125 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 105.0083 ms
+2026-02-20 03:15:07.652 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 50.3977 ms
+2026-02-20 03:15:07.652 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 51.5334 ms
+2026-02-20 03:15:07.702 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 100.0818 ms
+2026-02-20 03:15:07.703 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 101.8008 ms
+2026-02-20 03:15:07.704 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 49.0082 ms
+2026-02-20 03:15:07.704 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 49.9069 ms
+2026-02-20 03:15:07.804 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 99.8113 ms
+2026-02-20 03:15:07.807 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 103.2213 ms
+2026-02-20 03:15:11.547 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.1252 ms
+2026-02-20 03:15:11.547 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0441 ms
+2026-02-20 03:15:11.602 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 51.5368 ms
+2026-02-20 03:15:11.654 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 51.2531 ms
+2026-02-20 03:15:14.835 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0903 ms
+2026-02-20 03:15:14.835 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0364 ms
+2026-02-20 03:15:14.836 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0323 ms
+2026-02-20 03:15:14.836 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0207 ms
+2026-02-20 03:15:14.837 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0209 ms
+2026-02-20 03:15:14.838 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0617 ms
+2026-02-20 03:15:14.886 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 52.8779 ms
+2026-02-20 03:15:14.889 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 49.1465 ms
+2026-02-20 03:15:14.938 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 50.4048 ms
+2026-02-20 03:15:14.939 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 97.7559 ms
+2026-02-20 03:15:14.939 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 48.6660 ms
+2026-02-20 03:15:14.942 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 100.4680 ms
+2026-02-20 03:15:15.041 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 100.9924 ms
+2026-02-20 03:15:15.043 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 100.3890 ms
+2026-02-20 03:15:16.203 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1711 ms
+2026-02-20 03:15:16.203 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0483 ms
+2026-02-20 03:15:16.257 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 50.7959 ms
+2026-02-20 03:15:16.309 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 50.6817 ms
+2026-02-20 03:15:17.940 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.1159 ms
+2026-02-20 03:15:17.942 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0626 ms
+2026-02-20 03:15:17.991 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 50.4839 ms
+2026-02-20 03:15:17.996 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 50.9478 ms
+2026-02-20 03:15:18.041 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 99.6626 ms
+2026-02-20 03:15:18.041 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 98.8819 ms
+2026-02-20 03:15:18.043 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 50.4385 ms
+2026-02-20 03:15:18.048 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 50.6379 ms
+2026-02-20 03:15:18.143 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 101.1827 ms
+2026-02-20 03:15:18.145 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 103.2261 ms
+2026-02-20 03:15:19.868 +06:00 [INF] HTTP OPTIONS /api/v1/blogs/all responded 204 in 0.0845 ms
+2026-02-20 03:15:19.869 +06:00 [INF] HTTP OPTIONS /api/v1/blogs/all responded 204 in 0.0442 ms
+2026-02-20 03:15:19.929 +06:00 [INF] HTTP GET /api/v1/blogs/all responded 200 in 58.2947 ms
+2026-02-20 03:15:19.980 +06:00 [INF] HTTP GET /api/v1/blogs/all responded 200 in 50.0346 ms
+2026-02-20 03:17:31.834 +06:00 [INF] HTTP OPTIONS /api/v1/blogs responded 204 in 0.0808 ms
+2026-02-20 03:17:31.995 +06:00 [INF] HTTP POST /api/v1/blogs responded 201 in 158.4378 ms
+2026-02-20 03:17:31.998 +06:00 [INF] HTTP OPTIONS /api/v1/blogs/all responded 204 in 0.0771 ms
+2026-02-20 03:17:32.055 +06:00 [INF] HTTP GET /api/v1/blogs/all responded 200 in 54.2755 ms
+2026-02-20 03:17:36.735 +06:00 [INF] HTTP OPTIONS /api/v1/services/all responded 204 in 0.1002 ms
+2026-02-20 03:17:36.741 +06:00 [INF] HTTP OPTIONS /api/v1/services/all responded 204 in 0.1543 ms
+2026-02-20 03:17:36.817 +06:00 [INF] HTTP GET /api/v1/services/all responded 200 in 72.1647 ms
+2026-02-20 03:17:36.871 +06:00 [INF] HTTP GET /api/v1/services/all responded 200 in 52.2637 ms
+2026-02-20 03:17:55.147 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1609 ms
+2026-02-20 03:17:55.148 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0655 ms
+2026-02-20 03:17:55.202 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.3528 ms
+2026-02-20 03:17:55.257 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.6916 ms
+2026-02-20 03:17:57.005 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0859 ms
+2026-02-20 03:17:57.007 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1099 ms
+2026-02-20 03:17:57.057 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 48.9668 ms
+2026-02-20 03:17:57.057 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.6071 ms
+2026-02-20 03:17:57.111 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.4915 ms
+2026-02-20 03:36:37.282 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1052 ms
+2026-02-20 03:36:37.283 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0706 ms
+2026-02-20 03:36:37.720 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 434.7786 ms
+2026-02-20 03:36:37.778 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.7797 ms
+2026-02-20 03:36:45.156 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1445 ms
+2026-02-20 03:36:45.157 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0942 ms
+2026-02-20 03:36:45.213 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 51.6395 ms
+2026-02-20 03:37:14.863 +06:00 [INF] HTTP OPTIONS /api/v1/courses responded 204 in 0.0902 ms
+2026-02-20 03:37:14.864 +06:00 [INF] HTTP OPTIONS /api/v1/courses responded 204 in 0.0302 ms
+2026-02-20 03:37:14.929 +06:00 [INF] HTTP GET /api/v1/courses responded 200 in 61.4626 ms
+2026-02-20 03:37:20.153 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1175 ms
+2026-02-20 03:37:20.154 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0635 ms
+2026-02-20 03:37:20.159 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1238 ms
+2026-02-20 03:37:20.160 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1110 ms
+2026-02-20 03:37:20.213 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.3674 ms
+2026-02-20 03:37:20.267 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.7620 ms
+2026-02-20 03:38:39.969 +06:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.1142 ms
+2026-02-20 03:38:40.136 +06:00 [INF] Admin hikmahabroad@gmail.com logged in successfully
+2026-02-20 03:38:40.138 +06:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 166.1401 ms
+2026-02-20 03:38:40.183 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.1503 ms
+2026-02-20 03:38:40.185 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0952 ms
+2026-02-20 03:38:40.186 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0238 ms
+2026-02-20 03:38:40.188 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0845 ms
+2026-02-20 03:38:40.190 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0777 ms
+2026-02-20 03:38:40.192 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.1509 ms
+2026-02-20 03:38:40.192 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0337 ms
+2026-02-20 03:38:40.193 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0241 ms
+2026-02-20 03:38:40.246 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 51.3192 ms
+2026-02-20 03:38:40.352 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 103.9063 ms
+2026-02-20 03:38:40.431 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 234.4422 ms
+2026-02-20 03:38:40.534 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 101.6266 ms
+2026-02-20 03:38:40.629 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 433.5526 ms
+2026-02-20 03:38:40.680 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 49.4249 ms
+2026-02-20 03:38:40.692 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 495.7930 ms
+2026-02-20 03:38:40.795 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 101.7923 ms
+2026-02-20 03:38:51.618 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.2249 ms
+2026-02-20 03:38:51.618 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0357 ms
+2026-02-20 03:38:51.674 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 50.8639 ms
+2026-02-20 03:38:51.727 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 51.0668 ms
+2026-02-20 03:38:56.821 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1818 ms
+2026-02-20 03:38:56.822 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0911 ms
+2026-02-20 03:38:56.877 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.0523 ms
+2026-02-20 03:38:56.931 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.0756 ms
+2026-02-20 03:39:20.530 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1211 ms
+2026-02-20 03:39:20.532 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0880 ms
+2026-02-20 03:39:20.586 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.5168 ms
+2026-02-20 03:39:20.639 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.5803 ms
+2026-02-20 03:41:14.448 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1457 ms
+2026-02-20 03:41:14.448 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0435 ms
+2026-02-20 03:41:14.453 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.7299 ms
+2026-02-20 03:41:14.454 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1021 ms
+2026-02-20 03:41:14.510 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.6746 ms
+2026-02-20 03:41:14.510 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 51.7262 ms
+2026-02-20 03:41:14.572 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.0442 ms
+2026-02-20 03:47:11.406 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1195 ms
+2026-02-20 03:47:11.408 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0838 ms
+2026-02-20 03:47:11.410 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1708 ms
+2026-02-20 03:47:11.414 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1377 ms
+2026-02-20 03:47:11.415 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0663 ms
+2026-02-20 03:47:11.416 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0751 ms
+2026-02-20 03:47:11.476 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 58.2302 ms
+2026-02-20 03:47:11.490 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 71.2124 ms
+2026-02-20 03:47:11.531 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.8301 ms
+2026-02-20 03:47:11.586 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.6868 ms
+2026-02-20 03:47:11.639 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.2373 ms
+2026-02-20 03:48:21.566 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1031 ms
+2026-02-20 03:48:21.567 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0401 ms
+2026-02-20 03:48:21.567 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0193 ms
+2026-02-20 03:48:21.567 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0310 ms
+2026-02-20 03:48:21.621 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 48.7155 ms
+2026-02-20 03:48:21.623 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.2911 ms
+2026-02-20 03:48:21.675 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 50.8667 ms
+2026-02-20 03:48:39.812 +06:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.1492 ms
+2026-02-20 03:48:39.989 +06:00 [INF] Admin hikmahabroad@gmail.com logged in successfully
+2026-02-20 03:48:39.990 +06:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 174.4649 ms
+2026-02-20 03:48:40.045 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.1101 ms
+2026-02-20 03:48:40.046 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0341 ms
+2026-02-20 03:48:40.047 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0884 ms
+2026-02-20 03:48:40.049 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.1022 ms
+2026-02-20 03:48:40.051 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0607 ms
+2026-02-20 03:48:40.052 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.1417 ms
+2026-02-20 03:48:40.052 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.1403 ms
+2026-02-20 03:48:40.054 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0776 ms
+2026-02-20 03:48:40.108 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 49.6270 ms
+2026-02-20 03:48:40.110 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 53.6551 ms
+2026-02-20 03:48:40.161 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 51.5702 ms
+2026-02-20 03:48:40.162 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 51.0167 ms
+2026-02-20 03:48:40.162 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 104.1710 ms
+2026-02-20 03:48:40.268 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 103.1622 ms
+2026-02-20 03:48:40.556 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 497.5749 ms
+2026-02-20 03:48:40.663 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 105.8345 ms
+2026-02-20 03:48:46.952 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.1130 ms
+2026-02-20 03:48:46.952 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0259 ms
+2026-02-20 03:48:47.009 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 52.4982 ms
+2026-02-20 03:48:47.063 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 53.5781 ms
+2026-02-20 03:48:51.825 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1128 ms
+2026-02-20 03:48:51.827 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0831 ms
+2026-02-20 03:48:51.884 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.3910 ms
+2026-02-20 03:48:51.941 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 55.0304 ms
+2026-02-20 03:48:56.184 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.1544 ms
+2026-02-20 03:48:56.185 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0739 ms
+2026-02-20 03:48:56.294 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 105.7873 ms
+2026-02-20 03:48:56.403 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 107.0055 ms
+2026-02-20 03:48:58.406 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.1250 ms
+2026-02-20 03:48:58.406 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0321 ms
+2026-02-20 03:48:58.406 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0383 ms
+2026-02-20 03:48:58.407 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0331 ms
+2026-02-20 03:48:58.462 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 53.1070 ms
+2026-02-20 03:48:58.462 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 52.2069 ms
+2026-02-20 03:48:58.517 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 52.6218 ms
+2026-02-20 03:48:58.517 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 51.9734 ms
+2026-02-20 03:49:01.329 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1277 ms
+2026-02-20 03:49:01.329 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0406 ms
+2026-02-20 03:49:01.387 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.3119 ms
+2026-02-20 03:49:01.441 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.2210 ms
+2026-02-20 03:49:02.712 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.2952 ms
+2026-02-20 03:49:02.717 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0819 ms
+2026-02-20 03:49:02.766 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.9793 ms
+2026-02-20 03:49:02.820 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.5568 ms
+2026-02-20 04:04:39.152 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.4482 ms
+2026-02-20 04:04:39.153 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1053 ms
+2026-02-20 04:04:39.157 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1207 ms
+2026-02-20 04:04:39.159 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1638 ms
+2026-02-20 04:04:39.618 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 456.3927 ms
+2026-02-20 04:04:39.619 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 455.7029 ms
+2026-02-20 04:04:39.671 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.3292 ms
+2026-02-20 04:11:50.200 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.2302 ms
+2026-02-20 04:11:50.202 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1570 ms
+2026-02-20 04:11:50.208 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1098 ms
+2026-02-20 04:11:50.211 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.3231 ms
+2026-02-20 04:11:50.217 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.2428 ms
+2026-02-20 04:11:50.218 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0894 ms
+2026-02-20 04:11:50.273 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.0016 ms
+2026-02-20 04:11:50.274 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 51.0913 ms
+2026-02-20 04:11:50.329 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.3144 ms
+2026-02-20 04:11:50.383 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.5830 ms
+2026-02-20 04:11:50.437 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.4151 ms
+2026-02-20 04:20:26.002 +06:00 [INF] HTTP OPTIONS /api/v1/courses responded 204 in 0.1053 ms
+2026-02-20 04:20:26.003 +06:00 [INF] HTTP OPTIONS /api/v1/courses responded 204 in 0.0580 ms
+2026-02-20 04:20:26.058 +06:00 [INF] HTTP GET /api/v1/courses responded 200 in 52.5605 ms
+2026-02-20 04:20:26.912 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1009 ms
+2026-02-20 04:20:26.912 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0374 ms
+2026-02-20 04:20:26.914 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0463 ms
+2026-02-20 04:20:26.915 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0226 ms
+2026-02-20 04:20:26.968 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 51.3987 ms
+2026-02-20 04:20:26.968 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.2571 ms
+2026-02-20 04:20:27.024 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 54.2091 ms
+2026-02-20 04:26:45.173 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0993 ms
+2026-02-20 04:26:45.174 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0526 ms
+2026-02-20 04:26:45.175 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0325 ms
+2026-02-20 04:26:45.177 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0945 ms
+2026-02-20 04:26:45.178 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1171 ms
+2026-02-20 04:26:45.181 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1735 ms
+2026-02-20 04:26:45.234 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 49.1893 ms
+2026-02-20 04:26:45.235 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 50.9954 ms
+2026-02-20 04:26:45.290 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.3880 ms
+2026-02-20 04:26:45.342 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 50.8028 ms
+2026-02-20 04:26:45.395 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.2844 ms
+2026-02-20 04:33:16.086 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1196 ms
+2026-02-20 04:33:16.087 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0554 ms
+2026-02-20 04:33:16.088 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0474 ms
+2026-02-20 04:33:16.089 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0581 ms
+2026-02-20 04:33:16.091 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0690 ms
+2026-02-20 04:33:16.091 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0407 ms
+2026-02-20 04:33:16.144 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.7988 ms
+2026-02-20 04:33:16.145 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 49.8176 ms
+2026-02-20 04:33:16.197 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 50.7761 ms
+2026-02-20 04:33:16.250 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.4482 ms
+2026-02-20 04:33:16.302 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 50.1339 ms
+2026-02-20 04:37:10.473 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.2570 ms
+2026-02-20 04:37:10.474 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1422 ms
+2026-02-20 04:37:10.477 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0629 ms
+2026-02-20 04:37:10.478 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0346 ms
+2026-02-20 04:37:10.478 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0160 ms
+2026-02-20 04:37:10.479 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0340 ms
+2026-02-20 04:37:10.938 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 457.6492 ms
+2026-02-20 04:37:10.943 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 462.3742 ms
+2026-02-20 04:37:10.992 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.3298 ms
+2026-02-20 04:37:11.047 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.2027 ms
+2026-02-20 04:37:11.100 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.4897 ms
+2026-02-20 04:39:23.217 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0896 ms
+2026-02-20 04:39:23.218 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0308 ms
+2026-02-20 04:39:23.273 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 52.4228 ms
+2026-02-20 04:39:23.895 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0926 ms
+2026-02-20 04:39:23.895 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0233 ms
+2026-02-20 04:39:23.950 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.8906 ms
+2026-02-20 04:39:24.003 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.1194 ms
+2026-02-20 04:39:26.965 +06:00 [INF] HTTP OPTIONS /api/v1/courses responded 204 in 0.0703 ms
+2026-02-20 04:39:26.965 +06:00 [INF] HTTP OPTIONS /api/v1/courses responded 204 in 0.0179 ms
+2026-02-20 04:39:27.020 +06:00 [INF] HTTP GET /api/v1/courses responded 200 in 52.5483 ms
+2026-02-20 04:39:28.456 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0869 ms
+2026-02-20 04:39:28.460 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0880 ms
+2026-02-20 04:39:28.508 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.1917 ms
+2026-02-20 04:39:28.561 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.1987 ms
+2026-02-20 04:39:32.303 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0898 ms
+2026-02-20 04:39:32.304 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0670 ms
+2026-02-20 04:39:32.359 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.2561 ms
+2026-02-20 04:39:32.412 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.9282 ms
+2026-02-20 04:40:16.679 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1042 ms
+2026-02-20 04:40:16.680 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0480 ms
+2026-02-20 04:40:16.681 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0536 ms
+2026-02-20 04:40:16.682 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0366 ms
+2026-02-20 04:40:16.734 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 50.7060 ms
+2026-02-20 04:40:16.787 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.3532 ms
+2026-02-20 14:14:02.269 +06:00 [INF] Seed admin user credentials updated for: hikmahabroad@gmail.com
+2026-02-20 14:14:02.728 +06:00 [INF] Seed data completed
+2026-02-20 14:14:32.042 +06:00 [INF] HTTP GET /swagger/index.html responded 200 in 519.4813 ms
+2026-02-20 14:14:32.092 +06:00 [INF] HTTP GET /swagger/index.css responded 200 in 22.0282 ms
+2026-02-20 14:14:32.099 +06:00 [INF] HTTP GET /swagger/index.js responded 200 in 25.1320 ms
+2026-02-20 14:14:32.153 +06:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 83.6386 ms
+2026-02-20 14:14:32.173 +06:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 98.8592 ms
+2026-02-20 14:14:32.661 +06:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 586.7413 ms
+2026-02-20 14:14:33.160 +06:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 246.5599 ms
+2026-02-20 14:14:39.460 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 1.9285 ms
+2026-02-20 14:14:39.460 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 1.9286 ms
+2026-02-20 14:14:39.460 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 1.9285 ms
+2026-02-20 14:14:39.461 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.5771 ms
+2026-02-20 14:14:39.463 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1271 ms
+2026-02-20 14:14:39.463 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1464 ms
+2026-02-20 14:14:39.587 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 108.6527 ms
+2026-02-20 14:14:39.919 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 440.6338 ms
+2026-02-20 14:15:40.819 +06:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.4538 ms
+2026-02-20 14:15:40.999 +06:00 [INF] Admin hikmahabroad@gmail.com logged in successfully
+2026-02-20 14:15:41.390 +06:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 567.0778 ms
+2026-02-20 14:15:41.417 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.5667 ms
+2026-02-20 14:15:41.419 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.3472 ms
+2026-02-20 14:15:41.419 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0837 ms
+2026-02-20 14:15:41.419 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.1181 ms
+2026-02-20 14:15:41.420 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0717 ms
+2026-02-20 14:15:41.420 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0633 ms
+2026-02-20 14:15:41.421 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.1223 ms
+2026-02-20 14:15:41.423 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0517 ms
+2026-02-20 14:15:41.514 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 91.4156 ms
+2026-02-20 14:15:41.518 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 95.4259 ms
+2026-02-20 14:15:41.569 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 53.5620 ms
+2026-02-20 14:15:41.571 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 52.1096 ms
+2026-02-20 14:15:42.043 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 619.2165 ms
+2026-02-20 14:15:42.060 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 634.9196 ms
+2026-02-20 14:15:42.150 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 105.6331 ms
+2026-02-20 14:15:42.183 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 122.8801 ms
+2026-02-20 14:15:54.299 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.1367 ms
+2026-02-20 14:15:54.299 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.4422 ms
+2026-02-20 14:15:54.408 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 105.1602 ms
+2026-02-20 14:15:54.514 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 104.5817 ms
+2026-02-20 14:15:56.412 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.1574 ms
+2026-02-20 14:15:56.522 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 107.6018 ms
+2026-02-20 14:16:01.287 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.2067 ms
+2026-02-20 14:16:01.288 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.1281 ms
+2026-02-20 14:16:01.289 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0665 ms
+2026-02-20 14:16:01.290 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0499 ms
+2026-02-20 14:16:01.289 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0813 ms
+2026-02-20 14:16:01.290 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0520 ms
+2026-02-20 14:16:01.294 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.2399 ms
+2026-02-20 14:16:01.295 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0910 ms
+2026-02-20 14:16:01.361 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 63.5079 ms
+2026-02-20 14:16:01.361 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 62.9135 ms
+2026-02-20 14:16:01.414 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 52.1465 ms
+2026-02-20 14:16:01.414 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 51.9758 ms
+2026-02-20 14:16:01.414 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 114.6466 ms
+2026-02-20 14:16:01.420 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 121.2817 ms
+2026-02-20 14:16:01.522 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 106.0510 ms
+2026-02-20 14:16:01.522 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 101.3606 ms
+2026-02-20 14:16:05.687 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.3131 ms
+2026-02-20 14:16:05.688 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0835 ms
+2026-02-20 14:16:05.799 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 103.9789 ms
+2026-02-20 14:16:05.908 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 108.6903 ms
+2026-02-20 14:16:08.179 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.1287 ms
+2026-02-20 14:16:08.179 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0799 ms
+2026-02-20 14:16:08.180 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0474 ms
+2026-02-20 14:16:08.180 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0359 ms
+2026-02-20 14:16:08.180 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0292 ms
+2026-02-20 14:16:08.180 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0240 ms
+2026-02-20 14:16:08.181 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0507 ms
+2026-02-20 14:16:08.182 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.1190 ms
+2026-02-20 14:16:08.234 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 51.2028 ms
+2026-02-20 14:16:08.238 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 52.8026 ms
+2026-02-20 14:16:08.288 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 52.0645 ms
+2026-02-20 14:16:08.289 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 50.8837 ms
+2026-02-20 14:16:08.290 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 104.0070 ms
+2026-02-20 14:16:08.291 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 104.0167 ms
+2026-02-20 14:16:08.395 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 104.4479 ms
+2026-02-20 14:16:08.395 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 103.8393 ms
+2026-02-20 14:16:12.238 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 53.1681 ms
+2026-02-20 14:16:12.238 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 53.2158 ms
+2026-02-20 14:16:12.291 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 52.2340 ms
+2026-02-20 14:16:12.291 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 52.1127 ms
+2026-02-20 14:16:17.171 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1908 ms
+2026-02-20 14:16:17.171 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0353 ms
+2026-02-20 14:16:17.228 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.7888 ms
+2026-02-20 14:16:17.281 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.7230 ms
+2026-02-20 14:16:25.856 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1488 ms
+2026-02-20 14:16:25.856 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0940 ms
+2026-02-20 14:16:25.920 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 60.0371 ms
+2026-02-20 14:16:25.978 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 56.7796 ms
+2026-02-20 14:21:45.891 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.3654 ms
+2026-02-20 14:21:45.892 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0551 ms
+2026-02-20 14:21:45.891 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0462 ms
+2026-02-20 14:21:45.893 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0581 ms
+2026-02-20 14:21:45.950 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 52.5202 ms
+2026-02-20 14:21:45.950 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 55.1743 ms
+2026-02-20 14:21:46.006 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.9770 ms
+2026-02-20 14:34:48.036 +06:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.0798 ms
+2026-02-20 14:34:48.572 +06:00 [INF] Admin hikmahabroad@gmail.com logged in successfully
+2026-02-20 14:34:48.573 +06:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 534.4579 ms
+2026-02-20 14:34:48.603 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.1219 ms
+2026-02-20 14:34:48.606 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.1065 ms
+2026-02-20 14:34:48.607 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0767 ms
+2026-02-20 14:34:48.608 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0485 ms
+2026-02-20 14:34:48.608 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0229 ms
+2026-02-20 14:34:48.609 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0248 ms
+2026-02-20 14:34:48.610 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0885 ms
+2026-02-20 14:34:48.610 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0437 ms
+2026-02-20 14:34:48.686 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 52.0012 ms
+2026-02-20 14:34:48.759 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 71.7995 ms
+2026-02-20 14:34:48.868 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 231.5343 ms
+2026-02-20 14:34:48.973 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 104.4012 ms
+2026-02-20 14:34:49.007 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 373.6777 ms
+2026-02-20 14:34:49.059 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 51.1883 ms
+2026-02-20 14:34:49.078 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 444.8525 ms
+2026-02-20 14:34:49.181 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 101.7450 ms
+2026-02-20 14:34:51.432 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0796 ms
+2026-02-20 14:34:51.432 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0292 ms
+2026-02-20 14:34:51.488 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.4076 ms
+2026-02-20 14:34:51.542 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.4945 ms
+2026-02-20 14:36:22.077 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1997 ms
+2026-02-20 14:36:22.214 +06:00 [INF] HTTP PUT /api/v1/settings responded 200 in 129.9736 ms
+2026-02-20 14:36:29.332 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.2399 ms
+2026-02-20 14:36:29.333 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0842 ms
+2026-02-20 14:36:29.389 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.8737 ms
+2026-02-20 14:36:29.441 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.1811 ms
+2026-02-20 14:36:31.142 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0941 ms
+2026-02-20 14:36:31.143 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0362 ms
+2026-02-20 14:36:31.193 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.1926 ms
+2026-02-20 14:36:31.196 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 51.1566 ms
+2026-02-20 14:36:31.245 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 50.9444 ms
+2026-02-20 14:36:46.314 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0661 ms
+2026-02-20 14:36:46.314 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0154 ms
+2026-02-20 14:36:46.369 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.0214 ms
+2026-02-20 14:36:46.423 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.9744 ms
+2026-02-20 14:36:57.076 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1816 ms
+2026-02-20 14:36:57.077 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0800 ms
+2026-02-20 14:36:57.078 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0517 ms
+2026-02-20 14:36:57.079 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0914 ms
+2026-02-20 14:36:57.132 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 50.7615 ms
+2026-02-20 14:36:57.184 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 50.5376 ms
+2026-02-20 14:37:07.771 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.3870 ms
+2026-02-20 14:37:07.771 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0318 ms
+2026-02-20 14:37:07.772 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0331 ms
+2026-02-20 14:37:07.773 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0284 ms
+2026-02-20 14:37:07.827 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.7295 ms
+2026-02-20 14:37:07.881 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.9820 ms
+2026-02-20 14:37:11.517 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.7179 ms
+2026-02-20 14:37:11.570 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.9249 ms
+2026-02-20 14:40:05.739 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1061 ms
+2026-02-20 14:40:05.740 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0635 ms
+2026-02-20 14:40:05.741 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0540 ms
+2026-02-20 14:40:05.742 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0511 ms
+2026-02-20 14:40:05.795 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 50.6341 ms
+2026-02-20 14:40:05.795 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 51.4750 ms
+2026-02-20 14:40:05.852 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.7389 ms
+2026-02-20 14:40:10.348 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.4684 ms
+2026-02-20 14:40:10.400 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.6218 ms
+2026-02-20 14:40:14.084 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1008 ms
+2026-02-20 14:40:14.085 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0408 ms
+2026-02-20 14:40:14.086 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0654 ms
+2026-02-20 14:40:14.087 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0411 ms
+2026-02-20 14:40:14.147 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.8146 ms
+2026-02-20 14:40:14.203 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.1501 ms
+2026-02-20 14:42:29.844 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.2346 ms
+2026-02-20 14:42:29.845 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0567 ms
+2026-02-20 14:42:29.847 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0891 ms
+2026-02-20 14:42:29.848 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0511 ms
+2026-02-20 14:42:29.906 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 53.3002 ms
+2026-02-20 14:42:29.906 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 54.1563 ms
+2026-02-20 14:42:29.960 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.7470 ms
+2026-02-20 14:49:10.306 +06:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.0670 ms
+2026-02-20 14:49:10.470 +06:00 [INF] Admin hikmahabroad@gmail.com logged in successfully
+2026-02-20 14:49:10.471 +06:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 161.5146 ms
+2026-02-20 14:49:10.514 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0993 ms
+2026-02-20 14:49:10.517 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0648 ms
+2026-02-20 14:49:10.520 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0623 ms
+2026-02-20 14:49:10.520 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.1612 ms
+2026-02-20 14:49:10.520 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0213 ms
+2026-02-20 14:49:10.520 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0254 ms
+2026-02-20 14:49:10.522 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0787 ms
+2026-02-20 14:49:10.523 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.0378 ms
+2026-02-20 14:49:10.575 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 50.7593 ms
+2026-02-20 14:49:10.575 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 50.9772 ms
+2026-02-20 14:49:10.627 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 50.3876 ms
+2026-02-20 14:49:10.627 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 50.2106 ms
+2026-02-20 14:49:10.997 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 471.3541 ms
+2026-02-20 14:49:11.051 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 525.6592 ms
+2026-02-20 14:49:11.107 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 107.9897 ms
+2026-02-20 14:49:11.158 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 106.1387 ms
+2026-02-20 14:49:24.138 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0883 ms
+2026-02-20 14:49:24.139 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0748 ms
+2026-02-20 14:49:24.199 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 54.1849 ms
+2026-02-20 14:49:24.255 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 53.4596 ms
+2026-02-20 15:12:34.921 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.1126 ms
+2026-02-20 15:12:34.923 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0925 ms
+2026-02-20 15:12:35.378 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 453.1015 ms
+2026-02-20 15:12:35.434 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 53.2186 ms
+2026-02-20 15:12:41.428 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0786 ms
+2026-02-20 15:12:41.429 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0826 ms
+2026-02-20 15:12:41.432 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0838 ms
+2026-02-20 15:12:41.433 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0456 ms
+2026-02-20 15:12:41.489 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 54.5203 ms
+2026-02-20 15:12:41.555 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 56.6688 ms
+2026-02-20 15:12:41.774 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 338.2615 ms
+2026-02-20 15:12:41.824 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 49.7933 ms
+2026-02-20 15:24:05.957 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.1409 ms
+2026-02-20 15:24:05.959 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.2375 ms
+2026-02-20 15:24:05.962 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0748 ms
+2026-02-20 15:24:05.962 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.1028 ms
+2026-02-20 15:24:06.386 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 420.1710 ms
+2026-02-20 15:24:06.416 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 452.2160 ms
+2026-02-20 15:24:06.439 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 51.7139 ms
+2026-02-20 15:24:06.470 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 52.6059 ms
+2026-02-20 15:24:42.094 +06:00 [INF] HTTP OPTIONS /api/v1/courses/69982830820e0ca0a0534cac responded 204 in 0.0577 ms
+2026-02-20 15:24:42.283 +06:00 [ERR] HTTP PUT /api/v1/courses/69982830820e0ca0a0534cac responded 500 in 183.6760 ms
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[HikmaAbroad.Models.Entities.Course]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   at HikmaAbroad.Controllers.CoursesController.Update(String id, Course course) in D:\Enkryx\HikmahAbroad\backend\Controllers\CoursesController.cs:line 118
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-02-20 15:24:42.698 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[HikmaAbroad.Models.Entities.Course]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   at HikmaAbroad.Controllers.CoursesController.Update(String id, Course course) in D:\Enkryx\HikmahAbroad\backend\Controllers\CoursesController.cs:line 118
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-02-20 15:24:48.166 +06:00 [INF] HTTP OPTIONS /api/v1/courses/69982830820e0ca0a0534cac responded 204 in 0.1269 ms
+2026-02-20 15:24:48.329 +06:00 [ERR] HTTP PUT /api/v1/courses/69982830820e0ca0a0534cac responded 500 in 159.5918 ms
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[HikmaAbroad.Models.Entities.Course]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   at HikmaAbroad.Controllers.CoursesController.Update(String id, Course course) in D:\Enkryx\HikmahAbroad\backend\Controllers\CoursesController.cs:line 118
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-02-20 15:24:48.334 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[HikmaAbroad.Models.Entities.Course]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   at HikmaAbroad.Controllers.CoursesController.Update(String id, Course course) in D:\Enkryx\HikmahAbroad\backend\Controllers\CoursesController.cs:line 118
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-02-20 15:25:28.734 +06:00 [INF] HTTP OPTIONS /api/v1/courses/69982830820e0ca0a0534cac responded 204 in 0.0785 ms
+2026-02-20 15:25:28.909 +06:00 [ERR] HTTP PUT /api/v1/courses/69982830820e0ca0a0534cac responded 500 in 171.8126 ms
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[HikmaAbroad.Models.Entities.Course]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   at HikmaAbroad.Controllers.CoursesController.Update(String id, Course course) in D:\Enkryx\HikmahAbroad\backend\Controllers\CoursesController.cs:line 118
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-02-20 15:25:28.913 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[HikmaAbroad.Models.Entities.Course]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   at HikmaAbroad.Controllers.CoursesController.Update(String id, Course course) in D:\Enkryx\HikmahAbroad\backend\Controllers\CoursesController.cs:line 118
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-02-20 15:25:55.370 +06:00 [INF] HTTP OPTIONS /api/v1/courses/69982830820e0ca0a0534cad responded 204 in 0.0949 ms
+2026-02-20 15:25:55.528 +06:00 [ERR] HTTP PUT /api/v1/courses/69982830820e0ca0a0534cad responded 500 in 154.7644 ms
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[HikmaAbroad.Models.Entities.Course]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   at HikmaAbroad.Controllers.CoursesController.Update(String id, Course course) in D:\Enkryx\HikmahAbroad\backend\Controllers\CoursesController.cs:line 118
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-02-20 15:25:55.532 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[HikmaAbroad.Models.Entities.Course]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: HikmaAbroad.Courses index: Slug_1 dup key: { Slug: null }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.ReplaceOneAsync(FilterDefinition`1 filter, TDocument replacement, ReplaceOptions options, Func`3 bulkWriteAsync)
+   at HikmaAbroad.Controllers.CoursesController.Update(String id, Course course) in D:\Enkryx\HikmahAbroad\backend\Controllers\CoursesController.cs:line 118
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-02-20 15:33:41.945 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.1044 ms
+2026-02-20 15:33:41.946 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.0965 ms
+2026-02-20 15:33:42.002 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 52.8007 ms
+2026-02-20 15:33:42.055 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 52.4547 ms
+2026-02-20 15:33:42.870 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.1589 ms
+2026-02-20 15:33:42.872 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.0412 ms
+2026-02-20 15:33:42.923 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 52.2129 ms
+2026-02-20 15:33:42.924 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 51.3841 ms
+2026-02-20 15:33:42.980 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 54.1493 ms
+2026-02-20 15:33:42.982 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 57.2708 ms
+2026-02-20 15:33:47.599 +06:00 [INF] HTTP OPTIONS /api/v1/services/all responded 204 in 0.0703 ms
+2026-02-20 15:33:47.599 +06:00 [INF] HTTP OPTIONS /api/v1/services/all responded 204 in 0.1329 ms
+2026-02-20 15:33:47.664 +06:00 [INF] HTTP GET /api/v1/services/all responded 200 in 62.6692 ms
+2026-02-20 15:33:47.715 +06:00 [INF] HTTP GET /api/v1/services/all responded 200 in 50.7138 ms
+2026-02-20 15:33:59.579 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1114 ms
+2026-02-20 15:33:59.580 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0361 ms
+2026-02-20 15:33:59.636 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.5630 ms
+2026-02-20 15:33:59.689 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.2646 ms
+2026-02-20 15:34:02.361 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1162 ms
+2026-02-20 15:34:02.362 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0577 ms
+2026-02-20 15:34:02.433 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 52.0485 ms
+2026-02-20 15:34:07.621 +06:00 [INF] HTTP OPTIONS /api/v1/courses responded 204 in 0.0983 ms
+2026-02-20 15:34:07.622 +06:00 [INF] HTTP OPTIONS /api/v1/courses responded 204 in 0.1099 ms
+2026-02-20 15:34:07.680 +06:00 [INF] HTTP GET /api/v1/courses responded 200 in 54.9835 ms
+2026-02-20 15:34:18.994 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0651 ms
+2026-02-20 15:34:18.995 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0200 ms
+2026-02-20 15:34:47.860 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1199 ms
+2026-02-20 15:34:47.861 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0456 ms
+2026-02-20 15:34:47.862 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0470 ms
+2026-02-20 15:34:47.864 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0780 ms
+2026-02-20 15:34:47.919 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.2145 ms
+2026-02-20 15:34:47.972 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.9935 ms
+2026-02-20 16:08:41.178 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.2372 ms
+2026-02-20 16:08:41.181 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.2473 ms
+2026-02-20 16:08:41.187 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1366 ms
+2026-02-20 16:08:41.189 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1742 ms
+2026-02-20 16:08:41.193 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1265 ms
+2026-02-20 16:08:41.194 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0634 ms
+2026-02-20 16:08:41.762 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 560.3289 ms
+2026-02-20 16:08:41.786 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 590.9303 ms
+2026-02-20 16:08:41.840 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.2466 ms
+2026-02-20 16:08:41.895 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.3699 ms
+2026-02-20 16:08:41.947 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.1522 ms
+2026-02-20 16:31:31.340 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1022 ms
+2026-02-20 16:31:31.346 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 5.2984 ms
+2026-02-20 16:31:31.347 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0445 ms
+2026-02-20 16:31:31.347 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0805 ms
+2026-02-20 16:31:31.850 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 500.5811 ms
+2026-02-20 16:31:31.871 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 516.6161 ms
+2026-02-20 16:31:31.920 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 68.5508 ms
+2026-02-20 16:33:18.595 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.2632 ms
+2026-02-20 16:33:18.596 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1384 ms
+2026-02-20 16:33:18.598 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1361 ms
+2026-02-20 16:33:18.599 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0425 ms
+2026-02-20 16:33:18.602 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1045 ms
+2026-02-20 16:33:18.602 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1045 ms
+2026-02-20 16:33:18.663 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 54.5274 ms
+2026-02-20 16:33:18.664 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 53.7711 ms
+2026-02-20 16:33:18.719 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.8103 ms
+2026-02-20 16:33:18.773 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.5771 ms
+2026-02-20 16:33:18.829 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 54.0766 ms
+2026-02-20 16:37:14.822 +06:00 [INF] Seed admin user credentials updated for: hikmahabroad@gmail.com
+2026-02-20 16:37:15.175 +06:00 [INF] Seed data completed
+2026-02-20 16:37:18.982 +06:00 [INF] HTTP GET /swagger/index.html responded 200 in 77.9036 ms
+2026-02-20 16:37:19.036 +06:00 [INF] HTTP GET /swagger/index.js responded 200 in 19.3145 ms
+2026-02-20 16:37:19.235 +06:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 4.8365 ms
+2026-02-20 16:37:19.346 +06:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 125.4489 ms
+2026-02-20 16:37:24.711 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 2.2793 ms
+2026-02-20 16:37:24.711 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 2.2552 ms
+2026-02-20 16:37:24.711 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 1.8082 ms
+2026-02-20 16:37:24.719 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.7540 ms
+2026-02-20 16:37:24.722 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.4083 ms
+2026-02-20 16:37:24.727 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.4994 ms
+2026-02-20 16:37:24.818 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 85.0912 ms
+2026-02-20 16:37:24.876 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 57.7492 ms
+2026-02-20 16:37:24.928 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 50.5910 ms
+2026-02-20 16:37:24.991 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 61.4756 ms
+2026-02-20 16:37:25.100 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 366.9451 ms
+2026-02-20 16:39:13.317 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1011 ms
+2026-02-20 16:39:13.317 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.7375 ms
+2026-02-20 16:39:13.318 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1492 ms
+2026-02-20 16:39:13.319 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0930 ms
+2026-02-20 16:39:13.372 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 51.7626 ms
+2026-02-20 16:39:13.372 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 49.8734 ms
+2026-02-20 16:39:13.423 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 49.6222 ms
+2026-02-20 16:40:26.503 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.4158 ms
+2026-02-20 16:40:26.503 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.5065 ms
+2026-02-20 16:40:26.505 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1539 ms
+2026-02-20 16:40:26.505 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.0708 ms
+2026-02-20 16:40:26.561 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.4697 ms
+2026-02-20 16:40:26.563 +06:00 [INF] HTTP GET /api/v1/universities responded 200 in 55.5892 ms
+2026-02-20 16:40:26.616 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.7340 ms
+2026-02-20 16:40:41.194 +06:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.1560 ms
+2026-02-20 16:40:41.374 +06:00 [INF] Admin hikmahabroad@gmail.com logged in successfully
+2026-02-20 16:40:41.386 +06:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 188.2322 ms
+2026-02-20 16:40:41.415 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.3488 ms
+2026-02-20 16:40:41.415 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.1555 ms
+2026-02-20 16:40:41.418 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.2750 ms
+2026-02-20 16:40:41.419 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.1666 ms
+2026-02-20 16:40:41.421 +06:00 [INF] HTTP OPTIONS /api/v1/universities/all responded 204 in 0.1980 ms
+2026-02-20 16:40:41.422 +06:00 [INF] HTTP OPTIONS /api/v1/students responded 204 in 0.0725 ms
+2026-02-20 16:40:41.422 +06:00 [INF] HTTP OPTIONS /api/v1/courses/all responded 204 in 0.1306 ms
+2026-02-20 16:40:41.424 +06:00 [INF] HTTP OPTIONS /api/v1/students/contacts responded 204 in 0.3383 ms
+2026-02-20 16:40:41.511 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 84.6830 ms
+2026-02-20 16:40:41.516 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 88.0704 ms
+2026-02-20 16:40:41.566 +06:00 [INF] HTTP GET /api/v1/universities/all responded 200 in 53.6764 ms
+2026-02-20 16:40:41.568 +06:00 [INF] HTTP GET /api/v1/courses/all responded 200 in 50.4334 ms
+2026-02-20 16:40:41.978 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 549.1961 ms
+2026-02-20 16:40:41.981 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 552.8374 ms
+2026-02-20 16:40:42.080 +06:00 [INF] HTTP GET /api/v1/students/contacts responded 200 in 100.7342 ms
+2026-02-20 16:40:42.081 +06:00 [INF] HTTP GET /api/v1/students responded 200 in 98.6811 ms
+2026-02-20 16:40:43.960 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.0309 ms
+2026-02-20 16:40:43.960 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.2647 ms
+2026-02-20 16:40:44.017 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.3610 ms
+2026-02-20 16:40:44.069 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.1316 ms
+2026-02-20 16:40:51.765 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1219 ms
+2026-02-20 16:40:51.917 +06:00 [INF] HTTP PUT /api/v1/settings responded 200 in 141.9674 ms
+2026-02-20 16:40:58.383 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.2161 ms
+2026-02-20 16:40:58.384 +06:00 [INF] HTTP OPTIONS /api/v1/settings responded 204 in 0.1956 ms
+2026-02-20 16:40:58.441 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 53.2974 ms
+2026-02-20 16:40:58.494 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.3329 ms
+2026-02-20 16:40:59.889 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.1445 ms
+2026-02-20 16:40:59.889 +06:00 [INF] HTTP OPTIONS /api/v1/universities responded 204 in 0.4596 ms
+2026-02-20 16:40:59.943 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 52.7981 ms
+2026-02-20 16:40:59.997 +06:00 [INF] HTTP GET /api/v1/settings responded 200 in 51.6192 ms

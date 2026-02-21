@@ -78,21 +78,33 @@ public class AuthService : IAuthService
 
     public async Task SeedAdminAsync()
     {
-        var seedEmail = _config["AdminSeed:Email"] ?? "admin@hikmaconsult.com";
-        var seedPassword = _config["AdminSeed:Password"] ?? "Admin@123";
+        var seedEmail = (_config["AdminSeed:Email"] ?? "hikmahabroad@gmail.com").ToLowerInvariant();
+        var seedPassword = _config["AdminSeed:Password"] ?? "alim123";
 
-        var existing = await _db.AdminUsers.Find(u => u.Email == seedEmail.ToLowerInvariant()).FirstOrDefaultAsync();
-        if (existing != null) return;
-
-        var admin = new AdminUser
+        var existing = await _db.AdminUsers.Find(u => u.Email == seedEmail).FirstOrDefaultAsync();
+        
+        if (existing == null)
         {
-            Email = seedEmail.ToLowerInvariant(),
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword(seedPassword),
-            Name = "Admin",
-            Role = "admin"
-        };
-
-        await _db.AdminUsers.InsertOneAsync(admin);
-        _logger.LogInformation("Seed admin user created: {Email}", seedEmail);
+            var admin = new AdminUser
+            {
+                Email = seedEmail,
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(seedPassword),
+                Name = "Admin",
+                Role = "admin"
+            };
+            await _db.AdminUsers.InsertOneAsync(admin);
+            _logger.LogInformation("Seed admin user created: {Email}", seedEmail);
+        }
+        else
+        {
+            // Forcefully update the password to match the config
+            var newHash = BCrypt.Net.BCrypt.HashPassword(seedPassword);
+            var update = Builders<AdminUser>.Update
+                .Set(u => u.PasswordHash, newHash)
+                .Set(u => u.UpdatedAt, DateTime.UtcNow);
+            
+            await _db.AdminUsers.UpdateOneAsync(u => u.Id == existing.Id, update);
+            _logger.LogInformation("Seed admin user credentials updated for: {Email}", seedEmail);
+        }
     }
 }
