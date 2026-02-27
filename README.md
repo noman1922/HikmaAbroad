@@ -28,7 +28,7 @@ docker-compose up --build
 ```
 API available at `http://localhost:8080/swagger`
 
----
+--
 
 ## Environment Variables
 
